@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dessert Survey Form</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-family: Apple Chancery;
+        }
+        p {
+            text-align: center;
+        }
+        body {
+            font-family: Tahoma;
+            background-color: #e8d1dd;
+            font-size: 20px;
+        }
+        div {
+            background-color: #ebe1e6;
+            border-radius: 30px;
+            padding: 50px;
+            margin: 0 auto;
+            border: 1px solid;
+            width: 50%;
+
+        }
+        #name {
+            width: 100%;
+            font-size: 20px;
+            font-family: Tahoma;
+        }
+        #email {
+            width: 100%;
+            font-size: 20px;
+            font-family: Tahoma;
+        }
+        #number {
+            width: 10%;
+            font-size: 20px;
+            font-family: Tahoma;
+        }
+        #dropdown {
+            width: 100%;
+            font-size: 20px;
+            font-family: Tahoma;
+            color: grey;
+        }
+        #other {
+            width: 100%;
+            font-size: 20px;
+            font-family: Tahoma;
+            color: grey;
+        }
+        #submit {
+            border-radius: 30px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title"> Tea Dessert Survey Form</h1>
+        <p id="description">I'm opening a cafe and am narrowing down my dessert menu items. Thank you for filling out this survey so I can make sure I bake the most popular goods!</p>
+     <div>
+        <form action="ABC" id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <br>
+                <input type="text" placeholder="First Last" id="name" required> 
+            </br></br>
+            <label for="email" id="email-label">Email</label>
+            <br>
+                <input type="email" placeholder="abc@abc.com" id="email" title="Please provide a valid email address." required>
+            </br></br>
+            <label for="number" id="number-label">Age</label>
+            <br>
+                <input type="number" placeholder="Age" id="number" min="1" max="200"> 
+            </br></br>
+            <label for="dropdown">What is your favorite tea dessert?</label>
+            <br>
+                <select name="dessert" id=dropdown>
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="strawberryshortcake">Strawberry shortcake</option>
+                    <option value="cakepop">Cake pop</option>
+                    <option value="macaron">Macaron</option>
+                    <option value="eggcustardtart">Egg custart tart</option>
+                    <option value="lemonbread">Lemon bread</option>
+                    <option value="chocolatemousse">Chocolate mousse</option>
+                    <option value="other">Other</option>
+                </select>
+            </br></br>
+            <label for="other">If you answered "other" in the above question, please enter your favorite tea dessert here. Otherwise, please put N/A.</label>
+                <br>    
+                <textarea id="other" name="otherdessert" rows="1" cols="50">Enter your response here.</textarea>
+            </br></br>  
+            <label>Chocolate or vanilla?</label>
+                <br>
+                <input type="radio" id="chocolate" name="chocolate-vanilla" value="1">
+                    <label for="chocolate">Chocolate</label>
+                <input type="radio" id="vanilla" name="chocolate-vanilla" value="2"> 
+                    <label for="vanilla">Vanilla</label>
+            </br></br>              
+            <label>What dessert options would you like? Select all that apply.</label>
+            <br>
+                <input type="checkbox" id="sugarfree" name="sugarfreefatfreesodiumfree" value="1">
+                    <label for="sugarfree">Sugar-free options</label>
+                    <br>
+                <input type="checkbox" id="fatfree" name="sugarfreefatfreesodiumfree" value="2">
+                    <label for="fatfree">Fat-free options</label>
+                    <br>
+                <input type="checkbox" id="sodiumfree" name="sugarfreefatfreesodiumfree" value="3">
+                    <label for="sodiumfree">Sodium-free options</label>
+                    <br>
+                <input type="checkbox" id="noneoftheabove" name="sugarfreefatfreesodiumfree" value="4">
+                    <label for="noneoftheabove">None of the above</label>
+                    <br><br>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>      
+</body>
+</html>
